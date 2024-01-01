@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2A3B"
+        android:padding="@dimen/margin_base"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab 5 - Bai 3"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:textSize="@dimen/text_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_base"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_quick_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FB3131"
+            android:text="@string/quick_job" />
+        <Button
+            android:id="@+id/btn_slow_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/slow_job"
+            android:backgroundTint="#FB3131"
+            android:layout_marginLeft="@dimen/margin_base"/>
+    </LinearLayout>
+</LinearLayout>
